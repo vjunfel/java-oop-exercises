@@ -1,4 +1,4 @@
-package com.living.animal;
+package com.model.animal;
 
 public class Animal {
     boolean isAlive;

@@ -1,4 +1,4 @@
-package com.living.animal;
+package com.model.animal;
 
 public class Dog extends Animal {
     String species;
