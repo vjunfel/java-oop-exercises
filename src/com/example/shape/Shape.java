@@ -6,6 +6,7 @@ public abstract class Shape {
 
     public void draw() { // CONCRETE - it is inherited
         System.out.println("Shape draw");
-    };
+    }
+
 }
 
