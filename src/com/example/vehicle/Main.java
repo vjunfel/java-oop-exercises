@@ -1,6 +1,7 @@
 package com.example.vehicle;
 
 import com.example.collections.MyCollections;
+import com.example.collections.MyMaps;
 import com.example.collections.ReverseLinkedList;
 import com.example.lambda.MyLambda;
 
@@ -54,5 +55,8 @@ public class Main {
 
         ReverseLinkedList list9 = new ReverseLinkedList();
         list9.reverseLinkedList();
+
+        MyMaps map = new MyMaps();
+        map.myMaps();
     }
 }
