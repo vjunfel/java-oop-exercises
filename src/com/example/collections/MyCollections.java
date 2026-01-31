@@ -37,12 +37,42 @@ public class MyCollections {
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
-
         System.out.println();
     }
 
-    // COLLECTIONS - LIST
-    // Using ArrayList
+    /*
+
+    // ********* JAVA COLLECTION FRAMEWORK (JCF) **********
+
+    # Key collection interfaces in the framework
+    List	    Ordered collection, allows duplicates, index-based access	    ArrayList, LinkedList, Vector
+    Set	        No duplicates, unordered (unless special type)	                HashSet, LinkedHashSet, TreeSet
+    Queue	    FIFO collection, allows adding/removing at ends	                LinkedList, ArrayDeque, PriorityQueue
+    Deque	    Double-ended queue (add/remove both ends)	                    ArrayDeque, LinkedList
+
+                    Collection
+                  /      |      \
+               List     Set     Queue
+              /   \           /        \
+     ArrayList  LinkedList  LinkedList  ArrayDeque
+     Vector   ...          PriorityQueue  ...
+
+
+    Map	        Key-value pairs (NOT a Collection)	                            HashMap, LinkedHashMap, TreeMap, Hashtable
+
+    Map (not a Collection)
+     ├─ HashMap
+     ├─ TreeMap
+     └─ LinkedHashMap
+
+     # Utility Collections - class with static methods (ex. sort)
+     Collections.sort(list)
+     Collections.reverse(list)
+     Collections.shuffle(list)
+
+    */
+
+    // ******************* ArrayList **********************
     public void arrayList() {
         System.out.println("*****************************");
         System.out.println("Using List - ArrayList.");
@@ -73,7 +103,7 @@ public class MyCollections {
 
     }
 
-    // Using LinkedList
+    // ****************** LinkedList *******************
     public void linkedList() {
         System.out.println("*****************************");
         System.out.println("Using LinkedList - LinkedList.");
@@ -145,7 +175,7 @@ public class MyCollections {
         System.out.println("Using Deque - LinkedList.");
         System.out.println("*****************************");
 
-        // Deque INTERFACE - LinkedList (double-ended)
+        // Deque INTERFACE - (double-ended) - LIFO
         Deque<String> list = new LinkedList<>();
 
         list.add("A");
@@ -170,7 +200,7 @@ public class MyCollections {
         System.out.println("Using Queue - LinkedList.");
         System.out.println("*****************************");
 
-        // Queue INTERFACE - LinkedList- FIFO
+        // Queue INTERFACE - FIFO
         Queue<String> list = new LinkedList<>();
         list.add("A");
         list.add("B");
@@ -180,24 +210,25 @@ public class MyCollections {
         System.out.println(list);
     }
 
-    // Using Deque - ArrayDeque
+    // ****************** ArrayDeque ********************
     public void deqArrayDeque() {
         System.out.println("*****************************");
         System.out.println("Using Deque - DequeArray.");
         System.out.println("*****************************");
 
+        // Deque INTERFACE - (LIFO - Stack)
         Deque<String> list = new ArrayDeque<>();
         list.add("A");
         list.add("B");
         System.out.println(list);
     }
 
-    // Using Queue - ArrayDeque
     public void queArrayDeque() {
         System.out.println("*****************************");
         System.out.println("Using Queue - DequeArray.");
         System.out.println("*****************************");
 
+        // Queue INTERFACE - (FIFO - Queue)
         Queue<String> list = new ArrayDeque<>();
         list.add("A");
         list.add("B");
