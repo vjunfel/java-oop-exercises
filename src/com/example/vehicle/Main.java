@@ -1,6 +1,7 @@
 package com.example.vehicle;
 
 import com.example.collections.MyCollections;
+import com.example.collections.ReverseLinkedList;
 import com.example.shape.MyInterface;
 
 public class Main {
@@ -62,5 +63,8 @@ public class Main {
 
         MyCollections list8 = new MyCollections();
         list8.queArrayDeque();
+
+        ReverseLinkedList list9 = new ReverseLinkedList();
+        list9.reverseLinkedList();
     }
 }
