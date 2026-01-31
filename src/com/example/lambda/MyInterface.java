@@ -1,4 +1,4 @@
-package com.example.shape;
+package com.example.lambda;
 
 @FunctionalInterface
 public interface MyInterface {
