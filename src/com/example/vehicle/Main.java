@@ -1,7 +1,8 @@
 package com.example.vehicle;
 
 import com.example.collections.MyCollections;
-import com.example.shape.MyInterface;
+import com.example.collections.ReverseLinkedList;
+import com.example.lambda.MyLambda;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,22 +22,10 @@ public class Main {
 //        Car car2 = new Car("Hilux");
 //        car2.stop();
 
-/*
-        // Using regular object initialization
-        MyInterface lambda1 = new MyInterface() {
-            @Override
-            public void greet(String name, int age) {
-                System.out.printf("Hello %s! Your age is %d.\n", name, age);
-                ;
-            }
-        };
-        lambda1.greet("Jun", 23);
 
-
-        // Using lambda function
-        MyInterface lambda2 = (name, age) -> System.out.printf("Hello %s! Your age is %d.\n", name, age);
-        lambda2.greet("Junfel", 23);
-*/
+        // Instantiating LAMBDA function
+        MyLambda lambda1 = new MyLambda();
+        lambda1.myLambda();
 
         // Calling MyCollections class
         MyCollections list1 = new MyCollections();
@@ -62,5 +51,8 @@ public class Main {
 
         MyCollections list8 = new MyCollections();
         list8.queArrayDeque();
+
+        ReverseLinkedList list9 = new ReverseLinkedList();
+        list9.reverseLinkedList();
     }
 }
