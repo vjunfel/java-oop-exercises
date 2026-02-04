@@ -1,7 +1,8 @@
-package com.myapp.vehicle;
+package com.myapp;
 
 import com.myapp.collections.*;
 import com.myapp.lambda.MyLambda;
+import com.myapp.vehicle.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,5 +57,7 @@ public class Main {
 
         MyMaps map = new MyMaps();
         map.myMaps();
+
+
     }
 }
