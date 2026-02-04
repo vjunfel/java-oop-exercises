@@ -1,4 +1,4 @@
-package com.example.collections;
+package com.myapp.collections;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -8,6 +8,8 @@ public class MyMaps {
         System.out.println("*****************************");
         System.out.println("Using Map.");
         System.out.println("*****************************");
+
+        // HashMap, LinkedHashMap, TreeMap, Hashtable, ConcurrentHashMap
 
         // #HashMap - Unorderd, allows null key/values, Fast lookup O(1)
         Map<Integer, String> hashmap = new HashMap<>();
@@ -29,7 +31,7 @@ public class MyMaps {
 
         System.out.println("LinkedHashMap: " + linkedMap);
 
-        // #TreeMap - Sorted by key (natural order), Does NOT allow null key
+        // #TreeMap - Sorted by key (Alphanumerically), Does NOT allow null key
         Map<Integer, String> treeMap = new TreeMap<>();
 
         treeMap.put(1, "Zebra");
@@ -48,7 +50,7 @@ public class MyMaps {
 
         System.out.println("Hashtable: " + table);
 
-        // #ConcurrentHashMap - Modern for multiple threads, read at the same time, write at the same time (without locking the whole map)
+        // #ConcurrentHashMap - Modern for multiple threads, read at the same time, write at the same time (without locking the whole map), Unordered
         Map<String, Integer> map = new ConcurrentHashMap<>();
 
         map.put("Alice", 25);

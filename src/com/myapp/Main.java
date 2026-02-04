@@ -1,9 +1,8 @@
-package com.example.vehicle;
+package com.myapp;
 
-import com.example.collections.MyCollections;
-import com.example.collections.MyMaps;
-import com.example.collections.ReverseLinkedList;
-import com.example.lambda.MyLambda;
+import com.myapp.collections.*;
+import com.myapp.lambda.MyLambda;
+import com.myapp.vehicle.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,5 +57,11 @@ public class Main {
 
         MyMaps map = new MyMaps();
         map.myMaps();
+
+        MySets set = new MySets();
+        set.mySets();
+
+        MyStreams stream = new MyStreams();
+        stream.myStreams();
     }
 }

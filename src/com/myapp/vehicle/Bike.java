@@ -1,6 +1,6 @@
-package com.example.vehicle;
+package com.myapp.vehicle;
 
-public class Bike extends Vehicle{
+public class Bike extends Vehicle {
     int wheels = 4;
 
     public Bike(String name, String color, int model, int wheels) {

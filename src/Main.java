@@ -1,8 +1,3 @@
-import com.example.shape.Circle;
-import com.example.shape.Square;
-import com.example.vehicle.Car;
-import com.example.vehicle.Vehicle;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {

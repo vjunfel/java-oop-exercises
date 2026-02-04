@@ -1,4 +1,4 @@
-package com.example.lambda;
+package com.myapp.lambda;
 
 public class MyLambda {
     public void myLambda() {
