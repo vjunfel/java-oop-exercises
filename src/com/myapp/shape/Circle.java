@@ -1,4 +1,4 @@
-package com.example.shape;
+package com.myapp.shape;
 
 public class Circle extends Shape {
     double radius;

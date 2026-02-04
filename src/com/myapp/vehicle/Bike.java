@@ -1,4 +1,4 @@
-package com.example.vehicle;
+package com.myapp.vehicle;
 
 public class Bike extends Vehicle{
     int wheels = 4;

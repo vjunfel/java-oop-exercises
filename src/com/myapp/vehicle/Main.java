@@ -1,9 +1,7 @@
-package com.example.vehicle;
+package com.myapp.vehicle;
 
-import com.example.collections.MyCollections;
-import com.example.collections.MyMaps;
-import com.example.collections.ReverseLinkedList;
-import com.example.lambda.MyLambda;
+import com.myapp.collections.*;
+import com.myapp.lambda.MyLambda;
 
 public class Main {
     public static void main(String[] args) {

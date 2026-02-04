@@ -1,4 +1,4 @@
-package com.example.vehicle;
+package com.myapp.vehicle;
 
 public class Car extends Vehicle {
     private boolean isActive = false;

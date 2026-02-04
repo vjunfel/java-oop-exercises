@@ -1,4 +1,4 @@
-package com.example.vehicle;
+package com.myapp.vehicle;
 
 public abstract class Vehicle {
     String name;

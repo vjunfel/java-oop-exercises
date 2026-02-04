@@ -1,4 +1,4 @@
-package com.example.collections;
+package com.myapp.collections;
 
 import java.util.*;
 
@@ -48,7 +48,7 @@ public class MyCollections {
     List	    Ordered collection, allows duplicates, index-based access	    ArrayList, LinkedList, Vector
     Set	        No duplicates, unordered (unless special type)	                HashSet, LinkedHashSet, TreeSet
     Queue	    FIFO collection, allows adding/removing at ends	                LinkedList, ArrayDeque, PriorityQueue
-    Deque	    Double-ended queue (add/remove both ends)	                    ArrayDeque, LinkedList
+    Deque	    Double-ended queue (add/remove both ends)	                    LinkedList, ArrayDeque
 
                     Collection
                   /      |      \
@@ -78,7 +78,7 @@ public class MyCollections {
         System.out.println("Using List - ArrayList.");
         System.out.println("*****************************");
 
-        // Using ArrayList
+        // List INTERFACE - ArrayList
         List<String> list = new ArrayList<>();
 
         list.add("Ferrari");

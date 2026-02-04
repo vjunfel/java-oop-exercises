@@ -1,4 +1,4 @@
-package com.example.shape;
+package com.myapp.shape;
 
 public class Square extends Shape {
     double length;
