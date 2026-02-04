@@ -58,6 +58,7 @@ public class Main {
         MyMaps map = new MyMaps();
         map.myMaps();
 
-
+        MySets set = new MySets();
+        set.mySets();
     }
 }
