@@ -60,5 +60,8 @@ public class Main {
 
         MySets set = new MySets();
         set.mySets();
+
+        MyStreams stream = new MyStreams();
+        stream.myStreams();
     }
 }
