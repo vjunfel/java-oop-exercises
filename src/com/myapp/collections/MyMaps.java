@@ -50,7 +50,7 @@ public class MyMaps {
 
         System.out.println("Hashtable: " + table);
 
-        // #ConcurrentHashMap - Modern for multiple threads, read at the same time, write at the same time (without locking the whole map), Unordered
+        // #ConcurrentHashMap - Modern, Thread-safe, read at the same time, write at the same time (without locking the whole map), Unordered
         Map<String, Integer> map = new ConcurrentHashMap<>();
 
         map.put("Alice", 25);
@@ -60,5 +60,20 @@ public class MyMaps {
 
         map.put("Alice", 26); // safe update
         System.out.println("ConcurrentHashMap: " + map);
+
+        // #WeakHashMap - Garbage collected if no longer reference.
+        Map<Object, String> weakHashMap = new WeakHashMap<>();
+
+        Object objKey1 = new Object();
+        Object objKey2 = new Object();
+        Object objKey3 = new Object();
+
+        weakHashMap.put(objKey1, "name");
+        weakHashMap.put(objKey2, "age");
+        weakHashMap.put(objKey3, "location");
+
+        System.out.println("WeakHashMap: " + weakHashMap.get(objKey1));
+        System.out.println("WeakHashMap: " + weakHashMap.get(objKey2));
+        System.out.println("WeakHashMap: " + weakHashMap.get(objKey3));
     }
 }
