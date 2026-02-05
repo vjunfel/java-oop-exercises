@@ -3,15 +3,17 @@ package com.myapp.buffer;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
-public class MyBuffer {
+public class MyFileBuffer {
     private static final String[] names = {"John", "Mark", "James"};
 
     public void printBuffer() {
         System.out.println("Result located in output.txt and list.csv");
 
         writeToFile("output.txt", true);
-        writeToFile("D:\\Accenture\\projects\\ProjectUno\\src\\com\\myapp\\buffer\\list.csv", false);
+//        writeToFile("D:\\Accenture\\projects\\ProjectUno\\src\\com\\myapp\\buffer\\list.csv", false);
     }
 
     private void writeToFile(String path, boolean includeHeaders) {

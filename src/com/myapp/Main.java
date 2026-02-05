@@ -1,11 +1,14 @@
 package com.myapp;
 
+import com.myapp.buffer.MyFileBuffer;
 import com.myapp.collections.*;
 import com.myapp.lambda.MyLambda;
 import com.myapp.vehicle.Car;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Car car1 = new Car("Ferrari", "blue", 2025, 4);
 //        car1.move();
@@ -63,5 +66,9 @@ public class Main {
 
         MyStreams stream = new MyStreams();
         stream.myStreams();
+
+        MyFileBuffer myFileBuffer = new MyFileBuffer();
+        myFileBuffer.printBuffer();
+
     }
 }
